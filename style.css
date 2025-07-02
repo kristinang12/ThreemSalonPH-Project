@@ -1,0 +1,269 @@
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url('THREEMA-BANNER.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.navbar{
+    background: linear-gradient(to right, rgb(72, 68, 68), rgb(98, 20, 72));
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+
+
+
+}
+.navbar ul{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    font-size: large;
+    list-style: none;
+    padding: 2%;
+    margin-right: 5%;
+    gap: 20px;
+
+}
+.navbar li{
+    text-decoration: none;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    align-items: end;
+    color: aliceblue;
+}
+
+
+
+.hero-section{
+    background-color: rgb(115, 23, 70);
+
+}
+
+.hero-section img{
+    height: 100%;
+    width: 100%;
+}
+
+/*About Us section*/
+
+.about-section {
+    background: linear-gradient(to right, rgb(41, 41, 41), rgb(75, 9, 42));
+    color: rgb(245, 245, 245);
+    padding: 5% 10%;
+}
+
+
+.about-us{
+    display: flex;
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about-us p{
+    border: solid;
+    padding: 2%;
+    box-shadow: 0px 0px 10px rgb(166, 166, 166);
+
+}
+/*Services Section*/
+
+
+.services-section{
+    background: linear-gradient(to right, rgb(41, 41, 41), rgb(75, 9, 42));
+    color: rgb(245, 245, 245);
+    padding: 5% 10%;
+    margin-top: 2%;
+
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;     /* ✅ allows items to wrap to new rows */
+  gap: 20px;           /* ✅ spacing between items */
+  padding: 5%;
+}
+
+.services-1 {
+  width: calc(50% - 10px);  /* ✅ space added inside calc() */
+  border: solid;
+  box-sizing: border-box;  /* ✅ optional, ensures padding doesn't overflow */
+  padding: 2%;
+  align-items: center;
+  text-align: justify;
+}
+
+.services-1 img{
+    width: 40%;
+    height: 40%;
+    align-items: center;
+   
+}
+/*Contact Section*/
+
+.header-contact{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+
+}
+
+.aline{
+    margin-left: 2%;
+    background-color: black;
+    align-items: center;
+    width: 90%;
+    height: 3px;
+}
+
+.contactsection {
+    background: linear-gradient(to right, rgb(41, 41, 41), rgb(75, 9, 42));
+    color: rgb(245, 245, 245);
+    padding: 5% 10%;
+    margin-top: 5%;
+
+}
+
+.mapsection{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+.map-container {
+    position: relative;
+    
+}
+
+.map-container iframe{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.location{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-section{
+
+    display: flex;
+    gap: 5%;
+    align-items: top;
+    justify-content: space-between;
+    border: solid;
+
+
+}
+
+.contactform{
+    box-sizing: border-box;
+    font-size: large;
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+    padding: 2%;    
+    border: solid;
+
+}
+
+input{
+    width: 100%;
+    height: 5vh;
+    background:  inherit;
+    border: solid;
+    border-color: aliceblue;
+}
+
+textarea{
+    width: 100%;
+    height: 20vh;
+    border: solid;
+    border-color: white;
+    background-color: inherit;
+    
+
+}
+
+#submit{
+    height: 30%;
+    width: 20%;
+}
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(to right, rgb(94, 15, 57), rgb(61, 61, 62));
+  color: white;
+  margin-top: 10%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Needed for .particle-canvas positioning */
+  overflow: hidden;
+}
+
+.footer-details {
+  display: flex;
+  padding: 5%;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.threema-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.social-details {
+  align-items: center;
+  gap: 12px;
+  margin-left: 10%;
+  flex: 1;
+}
+
+.social-item,
+.social-item a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.copyright-details {
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+/* Particle Canvas inside Footer */
+.particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}

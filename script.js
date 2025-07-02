@@ -3,6 +3,23 @@ function showMessage(event) {
     alert("Thank you for your message in Threema Salon");
 }
 
+document.querySelectorAll('.navbar a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); 
+
+    const targetId = this.getAttribute('href').substring(1); 
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 60, 
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+
 window.onload = function () {
   const canvas = document.querySelector(".footer-section .particle-canvas");
   const ctx = canvas.getContext("2d");

@@ -17,11 +17,11 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        <section class="hero-section">
-            <img src="THREEMA-BANNER.png"> 
+        <section class="hero-section" id="home">
+            <img src="img/THREEMA-BANNER.png"> 
         </section>
 
-        <section class="about-section">
+        <section class="about-section" id="about">
                             <h1>About US</h1>
 
             <div class="about-us">
@@ -31,7 +31,7 @@
             </div>
         </section>
 
-        <section class="services-section">
+        <section class="services-section" id="services">
             <h1>Services</h1>
             <div class="services">
                 <div class="services-1">
@@ -61,7 +61,7 @@
 
         </section>
 
-        <section class="contactsection">
+        <section class="contactsection" id="contact">
             <div class="header-contact">
                     <h1>Contact Us</h1>
               <div class="aline"></div>
@@ -83,19 +83,24 @@
                 <div class="contactform">
                     <h1>Message Us!</h1>
                     <form action="https://formsubmit.co/kristinealcober12@gmail.com" method="POST" id="form-contact">
+                        
                         <label for="fname">Name:</label><br>
-                        <input type="text" id="fname" required ><br>
+                        <input type="text" id="fname" name="name" required placeholder="Enter your name"><br><br>
 
-                        <label for="email">Email:  </label><br>
-                        <input type="text" id="email"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
 
-                        <label for="messages">Message:</label><br>
-                        <textarea id="messages">Messages: </textarea><br>
-                        
-                        <button onclick="showMessage()">Submit</button>
-                        
-                </form>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" required placeholder="Your message here"></textarea><br><br>
+
+                        <!-- Optional: Disable CAPTCHA and redirect after submit -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://threemsalonph-project.onrender.com/thank-you.html">
+
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
+
 
             </div>
 
@@ -108,7 +113,7 @@
             <canvas class="particle-canvas"></canvas>
             <div class="footer-details">
                 <div class="threema-details">
-                    <img src="THREEMA-LOGO.png" alt="Logo">
+                    <img src="img/THREEMA-LOGO.png" alt="Logo">
                     <h3>THREEMA Salon PH</h3>
                 </div>
                 
@@ -135,7 +140,7 @@
             </div>
             
             <div class="copyright-details">
-                <h3>Copyright © Lox Technology</h3>
+                <h3>Copyright © 2025 Lox Technology</h3>
             </div>
         </section>
         

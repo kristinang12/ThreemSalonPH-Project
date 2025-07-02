@@ -1,6 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
-    background-image: url('THREEMA-BANNER.png');
+    background-image: url('img/THREEMA-BANNER.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
@@ -83,18 +83,18 @@ body{
 
 .services {
   display: flex;
-  flex-wrap: wrap;     /* ✅ allows items to wrap to new rows */
-  gap: 20px;           /* ✅ spacing between items */
+  flex-wrap: wrap;     
+  gap: 20px;           
   padding: 5%;
 }
 
 .services-1 {
-  width: calc(50% - 10px);  /* ✅ space added inside calc() */
+  width: calc(50% - 10px);  
   border: solid;
-  box-sizing: border-box;  /* ✅ optional, ensures padding doesn't overflow */
-  padding: 2%;
+  box-sizing: border-box;  
   align-items: center;
   text-align: justify;
+  padding: 2%;
 }
 
 .services-1 img{
@@ -205,7 +205,7 @@ textarea{
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* Needed for .particle-canvas positioning */
+  position: relative; 
   overflow: hidden;
 }
 
@@ -257,7 +257,7 @@ textarea{
   width: 100%;
 }
 
-/* Particle Canvas inside Footer */
+
 .particle-canvas {
   position: absolute;
   top: 0;

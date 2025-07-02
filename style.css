@@ -180,6 +180,12 @@ input{
     background:  inherit;
     border: solid;
     border-color: aliceblue;
+    color: #000000; /* Text inside the field */
+    background-color: #fff; /* Background of the field */
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 textarea{
@@ -188,6 +194,12 @@ textarea{
     border: solid;
     border-color: white;
     background-color: inherit;
+    color: #161616; /* Text inside the field */
+    background-color: #fff; /* Background of the field */
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     
 
 }
